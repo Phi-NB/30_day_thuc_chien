@@ -1,0 +1,92 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background:linear-gradient(45deg, #00853e, #50c878);
+    font-family: 'Poppins', sans-serif;
+    font-weight: inherit;
+    .app{
+        display: flex;
+        margin-top: 262px;
+        justify-content: center;
+        color: #fff;
+        .card{
+            width: 305px;
+            height: 408px;
+            border-radius: 15px;
+            background-color: #242628;
+            margin: 0 30px;
+            overflow: hidden;
+            &__img{
+                border-radius: 100%;
+                width: 123px;
+                height: 123px;
+                border: 4px solid #f2726a;
+                margin: 25px auto;
+                transition: 0.4s;
+                &:hover{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: none;
+                    border: none;
+                    img{
+                        border-radius: 15px;
+                        transform: translateY(-25px);
+                    }
+                    .card{
+                        overflow: hidden;
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 100%;
+                }
+            }
+            &__name{
+                font-weight: 1000;
+                font-size: 22px;
+                text-align: center;
+            }
+            &__work{
+                text-align: center;
+                font-weight: 800;
+                color: #f2726a;
+            }
+            &__socical{
+                text-align: center;
+                margin: 38px 0;
+                i{
+                    font-size: 22px;
+                    margin: 0 20px;
+                    transition: 0.5s;
+                    &:hover{
+                        color: #f2726a;
+                    }
+                }
+            }
+            &__contact{
+                display: flex;
+                justify-content: center;
+                button{
+                    border: 2px solid #f2726a;
+                    width: 126px;
+                    height: 43px;
+                    background-color: #242628;
+                    border-radius: 10px;
+                    color: #fff;
+                    transition: 0.5s;
+                    &:hover{
+                        background-color: #f2726a;
+                    }
+                }
+            }
+        }
+    }
+}

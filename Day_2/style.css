@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #00853e, #50c878);
+  font-family: "Poppins", sans-serif;
+  font-weight: inherit;
+}
+body .app {
+  display: flex;
+  margin-top: 262px;
+  justify-content: center;
+  color: #fff;
+}
+body .app .card {
+  width: 305px;
+  height: 408px;
+  border-radius: 15px;
+  background-color: #242628;
+  margin: 0 30px;
+  overflow: hidden;
+}
+body .app .card__img {
+  border-radius: 100%;
+  width: 123px;
+  height: 123px;
+  border: 4px solid #f2726a;
+  margin: 25px auto;
+  transition: 0.4s;
+}
+body .app .card__img:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: none;
+  border: none;
+}
+body .app .card__img:hover img {
+  border-radius: 15px;
+  transform: translateY(-25px);
+}
+body .app .card__img:hover .card {
+  overflow: hidden;
+}
+body .app .card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+body .app .card__name {
+  font-weight: 1000;
+  font-size: 22px;
+  text-align: center;
+}
+body .app .card__work {
+  text-align: center;
+  font-weight: 800;
+  color: #f2726a;
+}
+body .app .card__socical {
+  text-align: center;
+  margin: 38px 0;
+}
+body .app .card__socical i {
+  font-size: 22px;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+body .app .card__socical i:hover {
+  color: #f2726a;
+}
+body .app .card__contact {
+  display: flex;
+  justify-content: center;
+}
+body .app .card__contact button {
+  border: 2px solid #f2726a;
+  width: 126px;
+  height: 43px;
+  background-color: #242628;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.5s;
+}
+body .app .card__contact button:hover {
+  background-color: #f2726a;
+}
+
+/*# sourceMappingURL=style.css.map */

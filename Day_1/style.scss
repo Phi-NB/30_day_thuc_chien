@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #4daf54, #3dBB80);
+    .card{
+        margin: 120px auto;
+        width: 320px;
+        height: 360px;
+        border-radius: 15px;
+        padding: 20px;
+        background: #272d40;
+        position: relative;
+        color: #fff;
+        transition-delay: 0.4s;
+        &:hover{
+            .card__img{
+                transform: translateY(-99px) rotate(-20deg);
+            }
+            .card__title{
+                transform: translate(-60px , -80px);
+            }
+            .card__price{
+                transform: translate(-124px , -80px);
+            }
+            .card__size{
+                margin-top: -50px;
+            }
+            .card__action, .card__color, .card__size{
+                visibility: visible;
+                opacity: 1;
+            }
+            
+        }
+        &__heart , &__cart{
+            font-size: 20px;
+            color: #fff;
+            position: absolute;
+        }
+        &__cart{
+            right: 20px;
+        }
+        &__img{
+            text-align: center;
+            transition: 0.5s;
+            img{
+                width: 160px;
+                height: 160px;
+            }
+        }
+        &__title, &__price{
+            font-weight: bold;
+            text-align: center;
+            transition: 0.5s;
+        }
+        &__title{
+            color: #3dBB80;
+            font-size: 24px;
+        }
+        &__size{
+            display: flex;
+            align-items: center;
+            margin-top: 150px;
+            transition: 0.5s;
+            h3{
+                font-size: 16px;
+            }
+            span{
+                padding: 0px 5px;
+                background: #dadada;
+                border-radius: 5px;
+                margin-left: 8px;
+                color: #000;
+            }
+        }
+        &__color{
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            transition: 0.5s;
+            h3{
+                font-size: 16px;
+            }
+            &--red, &--green, &--black{
+                display: block;
+                width: 14px;
+                height: 14px;
+                border-radius: 100%;
+                margin-left: 8px;
+            }
+            &--red{
+                background-color: red;
+            }
+            &--green{
+                background-color: green;
+            }
+            &--black{
+                background-color: black;
+            }
+        }
+        &__action{
+            .btn{
+                margin-left: 8px;
+            }
+            button{
+                border: none;
+                outline: none;
+                background-color: #3dBB80;
+                padding: 8px;
+                border-radius: 5px;
+                color: #fff;
+                transition: 0.5s;
+
+                &:hover{
+                    transform: scale(0.9);
+                }
+            }
+        }
+        &__action, &__color, &__size{
+            visibility: hidden;
+            opacity: 0;
+            transition-delay: 0.3s;
+        }
+    }
+}

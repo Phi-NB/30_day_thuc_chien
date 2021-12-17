@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #4daf54, #3dBB80);
+}
+body .card {
+  margin: 120px auto;
+  width: 320px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 20px;
+  background: #272d40;
+  position: relative;
+  color: #fff;
+  transition-delay: 0.4s;
+}
+body .card:hover .card__img {
+  transform: translateY(-99px) rotate(-20deg);
+}
+body .card:hover .card__title {
+  transform: translate(-60px, -80px);
+}
+body .card:hover .card__price {
+  transform: translate(-124px, -80px);
+}
+body .card:hover .card__size {
+  margin-top: -50px;
+}
+body .card:hover .card__action, body .card:hover .card__color, body .card:hover .card__size {
+  visibility: visible;
+  opacity: 1;
+}
+body .card__heart, body .card__cart {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+}
+body .card__cart {
+  right: 20px;
+}
+body .card__img {
+  text-align: center;
+  transition: 0.5s;
+}
+body .card__img img {
+  width: 160px;
+  height: 160px;
+}
+body .card__title, body .card__price {
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+}
+body .card__title {
+  color: #3dBB80;
+  font-size: 24px;
+}
+body .card__size {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  transition: 0.5s;
+}
+body .card__size h3 {
+  font-size: 16px;
+}
+body .card__size span {
+  padding: 0px 5px;
+  background: #dadada;
+  border-radius: 5px;
+  margin-left: 8px;
+  color: #000;
+}
+body .card__color {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+body .card__color h3 {
+  font-size: 16px;
+}
+body .card__color--red, body .card__color--green, body .card__color--black {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  margin-left: 8px;
+}
+body .card__color--red {
+  background-color: red;
+}
+body .card__color--green {
+  background-color: green;
+}
+body .card__color--black {
+  background-color: black;
+}
+body .card__action .btn {
+  margin-left: 8px;
+}
+body .card__action button {
+  border: none;
+  outline: none;
+  background-color: #3dBB80;
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.5s;
+}
+body .card__action button:hover {
+  transform: scale(0.9);
+}
+body .card__action, body .card__color, body .card__size {
+  visibility: hidden;
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */
